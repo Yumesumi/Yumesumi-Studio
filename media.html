@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>影像 · 梦澄工作室</title>
+  <meta name="description" content="梦澄工作室的影像作品：天际线2高速公路连接教程、Lost Dream 伴奏、Minecraft 掉帧解决方法。">
+  <link rel="canonical" href="https://studio.yumesumi.cyou/media.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yumesumi Studio">
+  <meta property="og:title" content="影像 · 梦澄工作室">
+  <meta property="og:description" content="收录声音与影像作品的创作空间。">
+  <meta property="og:image" content="https://studio.yumesumi.cyou/assets/brand/og.jpg">
+  <meta property="og:url" content="https://studio.yumesumi.cyou/media.html">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="影像 · 梦澄工作室">
+  <meta name="twitter:description" content="收录声音与影像作品的创作空间。">
+  <meta name="twitter:image" content="https://studio.yumesumi.cyou/assets/brand/og.jpg">
+
+  <meta name="theme-color" content="#05050c">
+  <meta name="color-scheme" content="dark">
+
+  <link rel="icon" href="assets/brand/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/logo.svg">
+
+  <link rel="preload" href="assets/fonts/misans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="ys-skip-link" href="#main">跳转到主要内容</a>
+
+  <div class="ambience" aria-hidden="true">
+    <div class="ambience__aurora ambience__aurora--a"></div>
+    <div class="ambience__aurora ambience__aurora--b"></div>
+    <div class="ambience__aurora ambience__aurora--c"></div>
+    <div class="ambience__grid"></div>
+    <img class="ambience__mark" src="assets/brand/logo.svg" width="722" height="722" alt="">
+    <div class="starfield" data-starfield></div>
+    <div class="ambience__vignette"></div>
+    <div class="ambience__grain"></div>
+  </div>
+
+  <header class="site-nav" data-site-nav>
+    <div class="site-nav__inner ys-container ys-container--wide">
+      <a class="site-nav__brand" href="index.html" aria-label="梦澄工作室首页">
+        <img class="site-nav__mark" src="assets/brand/logo.svg" width="30" height="30" alt="">
+        <span class="site-nav__wordmark">YUMESUMI STUDIO</span>
+      </a>
+
+      <nav class="site-nav__links" aria-label="主导航">
+        <ul>
+          <li><a class="site-nav__link" href="index.html">HOME</a></li>
+          <li><a class="site-nav__link" href="music.html">MUSIC</a></li>
+          <li><a class="site-nav__link is-active" href="media.html" aria-current="page">VISUAL</a></li>
+          <li><a class="site-nav__link" href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-nav__actions">
+        <a class="site-nav__back" href="https://yumesumi.cyou/" aria-label="返回梦澄中心">
+          <span>返回主站</span>
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7M8 7h9v9"></path>
+          </svg>
+        </a>
+
+        <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+          <span class="site-nav__toggle-label">MENU</span>
+          <span class="site-nav__toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+          <span class="ys-sr-only">打开菜单</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="site-menu" id="site-menu" hidden data-menu-panel>
+    <button class="site-menu__close" type="button" data-menu-close aria-label="关闭菜单">
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="site-menu__inner ys-container">
+      <nav aria-label="移动端导航">
+        <ul class="site-menu__list">
+          <li style="--i: 0">
+            <a class="site-menu__link" href="index.html">
+              <span class="site-menu__index">01</span>
+              <span class="site-menu__label">HOME</span>
+            </a>
+          </li>
+          <li style="--i: 1">
+            <a class="site-menu__link" href="music.html">
+              <span class="site-menu__index">02</span>
+              <span class="site-menu__label">MUSIC</span>
+            </a>
+          </li>
+          <li style="--i: 2">
+            <a class="site-menu__link is-active" href="media.html" aria-current="page">
+              <span class="site-menu__index">03</span>
+              <span class="site-menu__label">VISUAL</span>
+            </a>
+          </li>
+          <li style="--i: 3">
+            <a class="site-menu__link" href="about.html">
+              <span class="site-menu__index">04</span>
+              <span class="site-menu__label">ABOUT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="site-menu__foot">
+        <a class="site-menu__meta" href="https://yumesumi.cyou/">返回梦澄中心</a>
+        <a class="site-menu__meta" href="mailto:YumesumiArikki@outlook.com">YumesumiArikki@outlook.com</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="page-hero">
+      <span class="page-hero__ghost" aria-hidden="true">VISUAL</span>
+
+      <div class="page-hero__inner ys-container">
+        <p class="ys-eyebrow page-hero__eyebrow">Visual · 影像</p>
+        <h1 class="page-hero__title">画面</h1>
+        <p class="page-hero__lede">
+          在哔哩哔哩发布的视频作品。教程、伴奏与游戏设置。
+        </p>
+        <div class="page-hero__meta">
+          <span>03 Videos</span>
+          <span>Bilibili</span>
+          <span>2021 — 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-section ys-section">
+      <div class="ys-container">
+        <div class="section-head">
+          <p class="ys-eyebrow">Filmography</p>
+          <h2>影像目录</h2>
+          <p class="section-head__desc">点击封面或文字链接，前往哔哩哔哩观看。</p>
+        </div>
+
+        <div class="work-grid work-grid--video">
+          <article class="video-card video-card--wide">
+            <a class="video-card__media" href="https://www.bilibili.com/video/BV1AdtV6nEsZ" target="_blank" rel="noopener noreferrer" aria-label="在哔哩哔哩观看 天际线2高速公路连接教程">
+              <img class="video-card__img" src="assets/covers/video-skyline.webp" width="1280" height="720" alt="天际线2高速公路连接教程封面" loading="lazy">
+              <span class="video-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M8 5.5v13l10-6.5z"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="video-card__body">
+              <p class="video-card__meta">
+                <span>2026</span>
+                <span>02:02</span>
+                <span>教程</span>
+              </p>
+              <h3 class="video-card__title">【天际线2】高速公路丝滑连接城市普通道路的方法</h3>
+              <p class="video-card__desc">《城市：天际线 II》教程：把高速公路平滑地接入城市普通道路。</p>
+              <a class="video-card__link" href="https://www.bilibili.com/video/BV1AdtV6nEsZ" target="_blank" rel="noopener noreferrer">
+                在 B 站观看
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M8 7h9v9"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a class="video-card__media" href="https://www.bilibili.com/video/BV1ku411P7wH" target="_blank" rel="noopener noreferrer" aria-label="在哔哩哔哩观看 Lost Dream - Juggernaut. 伴奏">
+              <img class="video-card__img" src="assets/covers/video-lost-dream.webp" width="1280" height="720" alt="Lost Dream - Juggernaut. 伴奏封面" loading="lazy">
+              <span class="video-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M8 5.5v13l10-6.5z"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="video-card__body">
+              <p class="video-card__meta">
+                <span>2023</span>
+                <span>04:28</span>
+                <span>伴奏</span>
+              </p>
+              <h3 class="video-card__title">Lost Dream - Juggernaut. 伴奏 UVR5自制版</h3>
+              <p class="video-card__desc">使用 UVR5 与 FL Studio 自制的《Juggernaut.》伴奏。</p>
+              <a class="video-card__link" href="https://www.bilibili.com/video/BV1ku411P7wH" target="_blank" rel="noopener noreferrer">
+                在 B 站观看
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M8 7h9v9"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <a class="video-card__media" href="https://www.bilibili.com/video/BV1Qr4y1T7w4" target="_blank" rel="noopener noreferrer" aria-label="在哔哩哔哩观看 Minecraft 转动视角掉帧解决方法">
+              <img class="video-card__img" src="assets/covers/video-minecraft.webp" width="1280" height="720" alt="Minecraft 转动视角掉帧解决方法封面" loading="lazy">
+              <span class="video-card__play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M8 5.5v13l10-6.5z"></path>
+                </svg>
+              </span>
+            </a>
+            <div class="video-card__body">
+              <p class="video-card__meta">
+                <span>2021</span>
+                <span>01:22</span>
+                <span>教程</span>
+              </p>
+              <h3 class="video-card__title">【Minecraft】游戏中转动视角就掉帧的解决方法</h3>
+              <p class="video-card__desc">通过调整鼠标报告率，解决转动视角时掉帧的问题。</p>
+              <a class="video-card__link" href="https://www.bilibili.com/video/BV1Qr4y1T7w4" target="_blank" rel="noopener noreferrer">
+                在 B 站观看
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M8 7h9v9"></path>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="listen-strip">
+          <p class="listen-strip__title">More videos</p>
+          <div class="listen-links">
+            <a href="https://space.bilibili.com/265604149" target="_blank" rel="noopener noreferrer">
+              哔哩哔哩
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9"></path>
+              </svg>
+            </a>
+            <a href="https://v.douyin.com/C-jmmYX4EuY/" target="_blank" rel="noopener noreferrer">
+              抖音
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="ys-container ys-container--wide">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <img class="site-footer__mark" src="assets/brand/logo.svg" width="38" height="38" alt="">
+          <div>
+            <p class="site-footer__name">YUMESUMI STUDIO</p>
+            <p class="site-footer__zh">梦澄工作室</p>
+          </div>
+        </div>
+
+        <a class="site-footer__back" href="https://yumesumi.cyou/">
+          返回梦澄中心
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7M8 7h9v9"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="site-footer__grid">
+        <nav class="site-footer__col" aria-label="页脚导航">
+          <h2 class="site-footer__title">导航</h2>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="media.html">VISUAL</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="平台链接">
+          <h2 class="site-footer__title">平台</h2>
+          <ul>
+            <li><a href="https://space.bilibili.com/265604149" target="_blank" rel="noopener noreferrer">哔哩哔哩</a></li>
+            <li><a href="https://v.douyin.com/C-jmmYX4EuY/" target="_blank" rel="noopener noreferrer">抖音</a></li>
+            <li><a href="https://music.163.com/#/artist?id=46905106" target="_blank" rel="noopener noreferrer">网易云音乐</a></li>
+            <li><a href="https://y.qq.com/n/ryqq_v2/singer/003SkOLA4PKTkm" target="_blank" rel="noopener noreferrer">QQ 音乐</a></li>
+            <li><a href="https://soundcloud.com/yumesumi_arikki" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">联系</h2>
+          <ul>
+            <li><a href="mailto:YumesumiArikki@outlook.com">YumesumiArikki@outlook.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2026 Yumesumi Studio · 梦澄工作室</p>
+        <p>纯静态站点 · GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

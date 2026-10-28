@@ -2,49 +2,357 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>梦澄工作室</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    html, body {
-      height: 100%;
-    }
+  <title>梦澄工作室 · Yumesumi Studio</title>
+  <meta name="description" content="梦澄工作室（Yumesumi Studio）收录 Yumesumi 制作的声音与影像作品：音乐、视频，以及两者之间的实验。">
+  <link rel="canonical" href="https://studio.yumesumi.cyou/">
 
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1.25rem;
-      background: #faf9f7;
-      color: #2b2b2b;
-      font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
-      text-align: center;
-      padding: 1.5rem;
-    }
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yumesumi Studio">
+  <meta property="og:title" content="梦澄工作室 · Yumesumi Studio">
+  <meta property="og:description" content="收录声音与影像作品的创作空间。">
+  <meta property="og:image" content="https://studio.yumesumi.cyou/assets/brand/og.jpg">
+  <meta property="og:url" content="https://studio.yumesumi.cyou/">
 
-    h1 {
-      font-size: clamp(2rem, 6vw, 3.25rem);
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      text-indent: 0.18em;
-    }
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="梦澄工作室 · Yumesumi Studio">
+  <meta name="twitter:description" content="收录声音与影像作品的创作空间。">
+  <meta name="twitter:image" content="https://studio.yumesumi.cyou/assets/brand/og.jpg">
 
-    p {
-      font-size: clamp(0.9rem, 2.4vw, 1.05rem);
-      color: #8a8478;
-      letter-spacing: 0.12em;
-      text-indent: 0.12em;
-    }
-  </style>
+  <meta name="theme-color" content="#05050c">
+  <meta name="color-scheme" content="dark">
+
+  <link rel="icon" href="assets/brand/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/logo.svg">
+
+  <link rel="preload" href="assets/fonts/misans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/site.js" defer></script>
 </head>
 <body>
-  <h1>梦澄工作室</h1>
-  <p>把梦，沉淀成澄澈的光。</p>
+  <a class="ys-skip-link" href="#main">跳转到主要内容</a>
+
+  <div class="ambience" aria-hidden="true">
+    <div class="ambience__aurora ambience__aurora--a"></div>
+    <div class="ambience__aurora ambience__aurora--b"></div>
+    <div class="ambience__aurora ambience__aurora--c"></div>
+    <div class="ambience__grid"></div>
+    <img class="ambience__mark" src="assets/brand/logo.svg" width="722" height="722" alt="">
+    <div class="starfield" data-starfield></div>
+    <div class="ambience__vignette"></div>
+    <div class="ambience__grain"></div>
+  </div>
+
+  <header class="site-nav" data-site-nav>
+    <div class="site-nav__inner ys-container ys-container--wide">
+      <a class="site-nav__brand" href="index.html" aria-label="梦澄工作室首页">
+        <img class="site-nav__mark" src="assets/brand/logo.svg" width="30" height="30" alt="">
+        <span class="site-nav__wordmark">YUMESUMI STUDIO</span>
+      </a>
+
+      <nav class="site-nav__links" aria-label="主导航">
+        <ul>
+          <li><a class="site-nav__link is-active" href="index.html" aria-current="page">HOME</a></li>
+          <li><a class="site-nav__link" href="music.html">MUSIC</a></li>
+          <li><a class="site-nav__link" href="media.html">VISUAL</a></li>
+          <li><a class="site-nav__link" href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-nav__actions">
+        <a class="site-nav__back" href="https://yumesumi.cyou/" aria-label="返回梦澄中心">
+          <span>返回主站</span>
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7M8 7h9v9"></path>
+          </svg>
+        </a>
+
+        <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+          <span class="site-nav__toggle-label">MENU</span>
+          <span class="site-nav__toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+          <span class="ys-sr-only">打开菜单</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="site-menu" id="site-menu" hidden data-menu-panel>
+    <button class="site-menu__close" type="button" data-menu-close aria-label="关闭菜单">
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="site-menu__inner ys-container">
+      <nav aria-label="移动端导航">
+        <ul class="site-menu__list">
+          <li style="--i: 0">
+            <a class="site-menu__link is-active" href="index.html" aria-current="page">
+              <span class="site-menu__index">01</span>
+              <span class="site-menu__label">HOME</span>
+            </a>
+          </li>
+          <li style="--i: 1">
+            <a class="site-menu__link" href="music.html">
+              <span class="site-menu__index">02</span>
+              <span class="site-menu__label">MUSIC</span>
+            </a>
+          </li>
+          <li style="--i: 2">
+            <a class="site-menu__link" href="media.html">
+              <span class="site-menu__index">03</span>
+              <span class="site-menu__label">VISUAL</span>
+            </a>
+          </li>
+          <li style="--i: 3">
+            <a class="site-menu__link" href="about.html">
+              <span class="site-menu__index">04</span>
+              <span class="site-menu__label">ABOUT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="site-menu__foot">
+        <a class="site-menu__meta" href="https://yumesumi.cyou/">返回梦澄中心</a>
+        <a class="site-menu__meta" href="mailto:YumesumiArikki@outlook.com">YumesumiArikki@outlook.com</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" data-hero>
+      <div class="hero__backdrop" aria-hidden="true">
+        <div class="hero__glow"></div>
+        <div class="hero__scan"></div>
+        <div class="hero__hud">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="hero__content ys-container ys-container--wide">
+        <p class="hero__eyebrow">YUMESUMI STUDIO</p>
+
+        <h1 class="hero__wordmark" data-spotlight>
+          <span class="hero__wordmark-line">YUMESUMI</span>
+          <span class="hero__wordmark-line">STUDIO</span>
+        </h1>
+
+        <p class="hero__name-zh" data-spotlight>梦澄工作室</p>
+
+        <p class="hero__lede">
+          收录声音与影像作品的创作空间。音乐、视频，以及两者之间的实验。
+        </p>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="#works">
+            <span>浏览作品</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 5v14M6 13l6 6 6-6"></path>
+            </svg>
+          </a>
+
+          <a class="button button--ghost" href="https://yumesumi.cyou/">
+            <span>返回梦澄中心</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17 17 7M8 7h9v9"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__spectrum" data-spectrum aria-hidden="true"></div>
+    </section>
+
+    <section class="intro ys-section" id="introduction">
+      <div class="ys-container">
+        <div class="intro__inner">
+          <p class="ys-eyebrow">Introduction</p>
+
+          <p class="intro__statement">
+            梦澄工作室是 Yumesumi 的<span class="intro__accent">声音</span>与<span class="intro__accent">影像</span>档案。
+          </p>
+
+          <p class="intro__detail">
+            这里收录已经发布的作品：音乐在网易云音乐与 SoundCloud，影像在哔哩哔哩。
+            它们来自不同的时间，也来自不同的工具，但都指向同一种表达。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="studio-visual ys-section" aria-label="工作室视觉">
+      <div class="ys-container ys-container--wide">
+        <figure class="studio-banner">
+          <img class="studio-banner__img" src="assets/brand/studio-banner.webp" width="1600" height="900" alt="悬浮的透明屏幕、声波与梦澄工作室标记组成的品牌视觉" loading="lazy">
+          <span class="studio-banner__label">Studio Identity</span>
+          <figcaption class="ys-sr-only">梦澄工作室视觉标识</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="works-preview ys-section" id="works">
+      <div class="ys-container">
+        <div class="section-head">
+          <p class="ys-eyebrow">Selected Works</p>
+          <h2>声音与影像</h2>
+          <p class="section-head__desc">当前收录 3 首音乐作品与 3 个视频作品。</p>
+        </div>
+
+        <div class="portal-grid">
+          <a class="portal" href="music.html">
+            <img class="portal__img" src="assets/covers/music-eclipx.webp" width="800" height="800" alt="Eclipx(feat.荼鸢) 专辑封面">
+            <span class="portal__shade"></span>
+            <span class="portal__index">01</span>
+            <span class="portal__body">
+              <span class="portal__label">Music · 音乐</span>
+              <span class="portal__title">音乐</span>
+              <span class="portal__meta">3 首作品 · 网易云音乐 / SoundCloud</span>
+              <span class="portal__link">
+                进入音乐
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+
+          <a class="portal" href="media.html">
+            <img class="portal__img" src="assets/covers/video-skyline.webp" width="1280" height="720" alt="天际线2高速公路连接教程封面">
+            <span class="portal__shade"></span>
+            <span class="portal__index">02</span>
+            <span class="portal__body">
+              <span class="portal__label">Visual · 影像</span>
+              <span class="portal__title">影像</span>
+              <span class="portal__meta">3 个视频 · 哔哩哔哩</span>
+              <span class="portal__link">
+                进入影像
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="platforms ys-section">
+      <div class="ys-container">
+        <div class="section-head">
+          <p class="ys-eyebrow">Elsewhere</p>
+          <h2>在别处找到这些作品</h2>
+          <p class="section-head__desc">作品也发布在这些平台。</p>
+        </div>
+
+        <ul class="platform-list">
+          <li>
+            <a class="platform-list__link" href="https://space.bilibili.com/265604149" target="_blank" rel="noopener noreferrer">
+              <span class="platform-list__index">01</span>
+              <span class="platform-list__name">哔哩哔哩</span>
+              <span class="platform-list__kind">视频</span>
+              <span class="platform-list__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="platform-list__link" href="https://v.douyin.com/C-jmmYX4EuY/" target="_blank" rel="noopener noreferrer">
+              <span class="platform-list__index">02</span>
+              <span class="platform-list__name">抖音</span>
+              <span class="platform-list__kind">短视频</span>
+              <span class="platform-list__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="platform-list__link" href="https://music.163.com/#/artist?id=46905106" target="_blank" rel="noopener noreferrer">
+              <span class="platform-list__index">03</span>
+              <span class="platform-list__name">网易云音乐</span>
+              <span class="platform-list__kind">音乐</span>
+              <span class="platform-list__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="platform-list__link" href="https://y.qq.com/n/ryqq_v2/singer/003SkOLA4PKTkm" target="_blank" rel="noopener noreferrer">
+              <span class="platform-list__index">04</span>
+              <span class="platform-list__name">QQ 音乐</span>
+              <span class="platform-list__kind">音乐</span>
+              <span class="platform-list__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="platform-list__link" href="https://soundcloud.com/yumesumi_arikki" target="_blank" rel="noopener noreferrer">
+              <span class="platform-list__index">05</span>
+              <span class="platform-list__name">SoundCloud</span>
+              <span class="platform-list__kind">音乐</span>
+              <span class="platform-list__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="ys-container ys-container--wide">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <img class="site-footer__mark" src="assets/brand/logo.svg" width="38" height="38" alt="">
+          <div>
+            <p class="site-footer__name">YUMESUMI STUDIO</p>
+            <p class="site-footer__zh">梦澄工作室</p>
+          </div>
+        </div>
+
+        <a class="site-footer__back" href="https://yumesumi.cyou/">
+          返回梦澄中心
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7M8 7h9v9"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="site-footer__grid">
+        <nav class="site-footer__col" aria-label="页脚导航">
+          <h2 class="site-footer__title">导航</h2>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="music.html">MUSIC</a></li>
+            <li><a href="media.html">VISUAL</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+
+        <nav class="site-footer__col" aria-label="平台链接">
+          <h2 class="site-footer__title">平台</h2>
+          <ul>
+            <li><a href="https://space.bilibili.com/265604149" target="_blank" rel="noopener noreferrer">哔哩哔哩</a></li>
+            <li><a href="https://v.douyin.com/C-jmmYX4EuY/" target="_blank" rel="noopener noreferrer">抖音</a></li>
+            <li><a href="https://music.163.com/#/artist?id=46905106" target="_blank" rel="noopener noreferrer">网易云音乐</a></li>
+            <li><a href="https://y.qq.com/n/ryqq_v2/singer/003SkOLA4PKTkm" target="_blank" rel="noopener noreferrer">QQ 音乐</a></li>
+            <li><a href="https://soundcloud.com/yumesumi_arikki" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">联系</h2>
+          <ul>
+            <li><a href="mailto:YumesumiArikki@outlook.com">YumesumiArikki@outlook.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2026 Yumesumi Studio · 梦澄工作室</p>
+        <p>纯静态站点 · GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
